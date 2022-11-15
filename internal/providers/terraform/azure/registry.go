@@ -65,6 +65,7 @@ var ResourceRegistry []*schema.RegistryItem = []*schema.RegistryItem{
 	GetAzureRMLoadBalancerRegistryItem(),
 	GetAzureRMLoadBalancerRuleRegistryItem(),
 	GetAzureRMLoadBalancerOutboundRuleRegistryItem(),
+	GetAzureRMLinuxFunctionAppRegistryItem(),
 	GetAzureRMLinuxVirtualMachineRegistryItem(),
 	GetAzureRMLinuxVirtualMachineScaleSetRegistryItem(),
 	getAzureRMLogAnalyticsWorkspaceRegistryItem(),
@@ -99,6 +100,7 @@ var ResourceRegistry []*schema.RegistryItem = []*schema.RegistryItem{
 	GetAzureRMVirtualMachineRegistryItem(),
 	GetAzureRMVirtualNetworkGatewayConnectionRegistryItem(),
 	GetAzureRMVirtualNetworkGatewayRegistryItem(),
+	GetAzureRMWindowsFunctionAppRegistryItem(),
 	GetAzureRMWindowsVirtualMachineRegistryItem(),
 	GetAzureRMWindowsVirtualMachineScaleSetRegistryItem(),
 	getAzureRMVPNGatewayRegistryItem(),
@@ -118,6 +120,8 @@ var ResourceRegistry []*schema.RegistryItem = []*schema.RegistryItem{
 	getSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionRegistryItem(),
 	getSentinelDataConnectorOffice365RegistryItem(),
 	getSentinelDataConnectorThreatIntelligenceRegistryItem(),
+	getServicebusNamespaceRegistryItem(),
+	getServicePlanRegistryItem(),
 	getIoTHubRegistryItem(),
 	getIoTHubDPSRegistryItem(),
 	getVirtualNetworkPeeringRegistryItem(),
@@ -340,6 +344,9 @@ var FreeResources = []string{
 	"azurerm_managed_application",
 	"azurerm_managed_application_definition",
 
+	// Azure Monitoring
+	"azurerm_monitor_diagnostic_setting",
+
 	// Azure Networking
 	"azurerm_application_security_group",
 	"azurerm_local_network_gateway",
@@ -375,12 +382,17 @@ var FreeResources = []string{
 	"azurerm_container_registry_scope_map",
 	"azurerm_container_registry_token",
 	"azurerm_container_registry_webhook",
+	"azurerm_container_registry_token_password",
 
 	// Azure Sentinel
 	"azurerm_sentinel_alert_rule_machine_learning_behavior_analytics",
 	"azurerm_sentinel_alert_rule_fusion",
 	"azurerm_sentinel_alert_rule_ms_security_incident",
 	"azurerm_sentinel_alert_rule_scheduled",
+
+	// Azure ServiceBus
+	"azurerm_servicebus_queue_authorization_rule",
+	"azurerm_servicebus_queue",
 
 	// Azure SQL
 	"azurerm_sql_server",

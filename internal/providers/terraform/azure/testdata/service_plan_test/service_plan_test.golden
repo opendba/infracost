@@ -1,0 +1,23 @@
+
+ Name                                   Monthly Qty  Unit   Monthly Cost (EUR)
+
+ azurerm_service_plan.basic
+ └─ Instance usage (B2)                         730  hours              €24.74
+
+ azurerm_service_plan.default_capacity
+ └─ Instance usage (B2)                         730  hours              €24.74
+
+ azurerm_service_plan.premium_v2
+ └─ Instance usage (P1 v2)                    7,300  hours             €734.78
+
+ azurerm_service_plan.standard_s1
+ └─ Instance usage (S1)                         730  hours              €72.75
+
+ azurerm_service_plan.standard_s2
+ └─ Instance usage (S1)                       3,650  hours             €363.75
+
+ OVERALL TOTAL (EUR)                                                 €1,220.75
+──────────────────────────────────
+7 cloud resources were detected:
+∙ 5 were estimated
+∙ 2 were free
